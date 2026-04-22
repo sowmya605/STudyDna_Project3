@@ -28,7 +28,7 @@ const StudyForm = ({ onSessionAdded, isModal }) => {
     setError('');
     
     try {
-      const response = await fetch('https://studydna-project3.onrender.com', {
+      const response = await fetch('http://localhost:5000/api/sessions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

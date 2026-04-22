@@ -48,7 +48,7 @@ function App() {
 
   const fetchSessions = async () => {
     try {
-      const response = await fetch('https://studydna-project3.onrender.com');
+      const response = await fetch('http://localhost:5000/api/sessions');
       const data = await response.json();
       setSessions(data);
     } catch (error) {
@@ -58,7 +58,7 @@ function App() {
 
   const fetchInsights = async () => {
     try {
-      const response = await fetch('https://studydna-project3.onrender.com');
+      const response = await fetch('http://localhost:5000/api/analytics/insights');
       const data = await response.json();
       setInsights(data);
     } catch (error) {
